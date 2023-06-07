@@ -1,0 +1,3 @@
+.header-container {
+  @apply flex justify-between items-center  sm:px-20 m-auto mt-6 mb-4 shadow-default;
+}
