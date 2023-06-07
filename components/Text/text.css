@@ -1,0 +1,23 @@
+.center-content {
+  @apply text-center m-auto max-w-[466px];
+}
+.lg-size {
+  @apply max-w-[564px];
+}
+.md-size {
+  @apply max-w-[466px];
+}
+.lg-size h2 {
+  @apply text-font_xl font-bold;
+}
+.lg-size p {
+  @apply text-2xl font-light;
+}
+.md-size h2,
+.center-content h2 {
+  @apply text-font_lg font-bold;
+}
+.md-size p,
+.center-content p {
+  @apply text-xl font-light;
+}
