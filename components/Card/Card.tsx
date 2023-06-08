@@ -22,7 +22,7 @@ export const Card: React.FC<CardProps> = ({ product }) => {
         const fractionalPart = rating - integerPart;
         return (
           <React.Fragment key={index}>
-            <div className="card-container">
+            <div className="card-wapper">
               <div className="card-img">
                 <Image src={item.img} alt="chair" className="rounded-t-3xl" />
               </div>
@@ -41,7 +41,6 @@ export const Card: React.FC<CardProps> = ({ product }) => {
                     {[...Array(integerPart)].map((_, index) => (
                       <StarIcon key={index} />
                     ))}
-
                     {fractionalPart > 0 && <HalfStarIcon key={integerPart} />}
                   </div>
                   <div>{item.fav ? <Fav /> : <UnFav />}</div>

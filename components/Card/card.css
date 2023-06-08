@@ -1,4 +1,4 @@
-.card-container {
+.card-wapper {
   @apply w-[311px] m-auto rounded-3xl shadow-default;
 }
 .card-detial {

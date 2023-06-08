@@ -1,0 +1,16 @@
+.dropdown-container {
+  @apply w-44 flex flex-col gap-2 bg-grey;
+}
+
+.dropdown-list {
+  @apply text-primaryContent text-base font-medium font-primaryFont;
+}
+
+.dropdown-container,
+.dropdown-list {
+  @apply p-2;
+}
+
+.menu-btn {
+  @apply py-[14px] px-4 flex justify-center items-center rounded-3xl bg-grey text-primaryContent text-base font-medium font-primaryFont cursor-pointer mb-3;
+}

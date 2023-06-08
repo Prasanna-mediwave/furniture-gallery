@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primaryBG: "#FFFFFF",
         primaryContent: "#313131",
+        BgGrey: "#F8F8F8",
         grey: "#E8E8E8",
         sandleYellow: "#D1A800",
         red: "#C12929",

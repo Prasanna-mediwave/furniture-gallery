@@ -8,6 +8,8 @@
 @import "../components/Header/header.css";
 @import "../components//Button/btn.css";
 @import "../components/Card/card.css";
+@import "../components/DropDown/dropdown.css";
+@import "../components/Timeline/timeline.css";
 
 @layer base {
   body {
@@ -16,11 +18,43 @@
 }
 
 .top-container {
-  @apply sm:ml-20 grid grid-cols-2 gap-x-32 items-center;
+  @apply sm:ml-20 grid grid-cols-2 gap-x-32 items-center mb-[104px];
 }
-.bottom-container {
-  @apply w-3/4 m-auto pt-[104px];
+.card-container {
+  @apply w-3/4 m-auto;
 }
 .card-length {
-  @apply grid grid-cols-3 gap-11;
+  @apply grid md:grid-cols-2 xl:grid-cols-3 gap-11;
+}
+.gallery-container {
+  @apply mt-40 mb-[88px] grid grid-cols-2 gap-x-[97px] w-fit ml-auto min-[1367px]:w-[89%];
+}
+.gallery-text {
+  @apply w-fit ml-auto min-[1367px]:w-[89%];
+}
+.gallery-image {
+  @apply grid grid-cols-3 gap-x-8 gap-y-7 pr-20;
+}
+.product-container {
+  @apply pt-12 bg-BgGrey;
+}
+.search-item {
+  @apply max-w-[510px] bg-grey flex rounded-3xl mt-20;
+}
+.search-item input {
+  @apply bg-transparent outline-none text-primaryContent placeholder:text-primaryContent py-[14px] pl-6 w-[73%] font-primaryFont font-medium;
+}
+.sort-by {
+  @apply absolute right-0 top-0;
+}
+.add-btn {
+  @apply border-b-2 border-sandleYellow border-solid mt-3 mb-14;
+}
+.all-product {
+  @apply grid md:grid-cols-2 xl:grid-cols-3 gap-x-11 gap-y-[30px];
+}
+.new {
+  @apply w-[300px] h-[526px] absolute z-10 right-0;
+  background: transparent linear-gradient(90deg, #ffffff00 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
 }
