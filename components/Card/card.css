@@ -1,0 +1,12 @@
+.card-container {
+  @apply w-[311px] m-auto rounded-3xl shadow-default;
+}
+.card-detial {
+  @apply flex justify-between items-baseline;
+}
+.product h2 {
+  @apply text-font_ms font-bold;
+}
+.product p {
+  @apply text-font_sm font-light;
+}

@@ -12,7 +12,7 @@ export const CartIcon = () => {
         transform="translate(-159.85 880.15)"
         fill="#313131"
         stroke="#313131"
-        stroke-width="0.3"
+        strokeWidth="0.3"
       />
     </svg>
   );

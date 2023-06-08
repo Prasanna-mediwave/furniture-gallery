@@ -12,9 +12,9 @@ export const Logo = () => {
           data-name="Furniture Gallery"
           transform="translate(80 73)"
           fill="#d1a800"
-          font-size="30"
-          font-family="Poppins-Bold, Poppins"
-          font-weight="700"
+          fontSize="30"
+          fontFamily="Poppins-Bold, Poppins"
+          fontWeight="700"
         >
           <tspan x="0" y="0">
             Furniture{" "}
@@ -27,9 +27,9 @@ export const Logo = () => {
           id="The"
           transform="translate(80 45)"
           fill="#313131"
-          font-size="24"
-          font-family="Poppins-Bold, Poppins"
-          font-weight="700"
+          fontSize="24"
+          fontFamily="Poppins-Bold, Poppins"
+          fontWeight="700"
         >
           <tspan x="0" y="0">
             The

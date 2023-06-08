@@ -18,8 +18,8 @@ export const MenuIcon = () => {
           transform="translate(1246.16 38.5)"
           fill="none"
           stroke="#313131"
-          stroke-linecap="round"
-          stroke-width="3.5"
+          strokeLinecap="round"
+          strokeWidth="3.5"
         />
         <line
           id="Line_2"
@@ -28,8 +28,8 @@ export const MenuIcon = () => {
           transform="translate(1240 50.05)"
           fill="none"
           stroke="#313131"
-          stroke-linecap="round"
-          stroke-width="3.5"
+          strokeLinecap="round"
+          strokeWidth="3.5"
         />
         <line
           id="Line_3"
@@ -38,8 +38,8 @@ export const MenuIcon = () => {
           transform="translate(1243.85 61.599)"
           fill="none"
           stroke="#313131"
-          stroke-linecap="round"
-          stroke-width="3.5"
+          strokeLinecap="round"
+          strokeWidth="3.5"
         />
       </g>
     </svg>
