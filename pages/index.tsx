@@ -9,8 +9,13 @@ import { Dropdown } from "@/components/DropDown/Dropdown";
 import { SideArrowIcon } from "@/assest/icons/SideArrow";
 import { ArrowIcon } from "@/assest/icons/DropArrow";
 import Timeline from "@/components/Timeline/Timeline";
+import { useState } from "react";
+import { UncoveringPopup } from "@/components/popup/UncoveringPopup";
 
 export default function Home() {
+  const [review, setReview] = useState<any>();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <main>
       <Header />
@@ -55,13 +60,17 @@ export default function Home() {
             <Image
               src={img.img}
               alt={img.alt}
-              width={162}
-              height={162}
               key={img.id}
-              className="rounded-[10px]"
+              className="rounded-[10px] cursor-pointer"
+              onClick={() => (setReview(img), setIsOpen(true))}
             />
           ))}
         </div>
+        {isOpen === true ? (
+          <UncoveringPopup data={review} onClose={setIsOpen} open={isOpen} />
+        ) : (
+          ""
+        )}
       </section>
       <div className=" my-[88px]">
         <Text

@@ -1,4 +1,5 @@
 import chair from "../assest/chair.jpg";
+import person from "../assest/person.jpg";
 export const BestProduct = [
   {
     id: 1,
@@ -116,8 +117,8 @@ export const Reviews = [
   {
     id: 1,
     name: "Product A",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -126,8 +127,8 @@ export const Reviews = [
   {
     id: 2,
     name: "Product B",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -136,8 +137,8 @@ export const Reviews = [
   {
     id: 3,
     name: "Product C",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -146,8 +147,8 @@ export const Reviews = [
   {
     id: 4,
     name: "Product D",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -156,8 +157,8 @@ export const Reviews = [
   {
     id: 5,
     name: "Product E",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -166,8 +167,8 @@ export const Reviews = [
   {
     id: 6,
     name: "Product F",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -176,8 +177,8 @@ export const Reviews = [
   {
     id: 7,
     name: "Product G",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -186,8 +187,8 @@ export const Reviews = [
   {
     id: 8,
     name: "Product H",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,
@@ -196,8 +197,8 @@ export const Reviews = [
   {
     id: 9,
     name: "Product J",
-    img: chair,
-    alt: "chair",
+    img: person,
+    alt: "person",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.5,

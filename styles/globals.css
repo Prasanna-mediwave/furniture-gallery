@@ -10,6 +10,7 @@
 @import "../components/Card/card.css";
 @import "../components/DropDown/dropdown.css";
 @import "../components/Timeline/timeline.css";
+@import "../components/popup/uncovering.css";
 
 @layer base {
   body {
@@ -34,6 +35,9 @@
 }
 .gallery-image {
   @apply grid grid-cols-3 gap-x-8 gap-y-7 pr-20;
+}
+.gallery-image img {
+  @apply object-cover h-[162px] w-[162px];
 }
 .product-container {
   @apply pt-12 bg-BgGrey;
