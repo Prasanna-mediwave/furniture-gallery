@@ -14,29 +14,32 @@ const Timeline = () => {
 
   return (
     <>
-      <div className=" flex mb-10 mt-[50px] w-[87%] ml-auto overflow-auto">
-        <div className="new" />
+      <div className="timeline-container ">
+        <div className="timeline-gradient" />
         {TimelineData.map((data, index) => (
           <div className="flex w-fit" key={data.id}>
-            <div className="w-[320px] h-[526px] relative">
+            <div className="timeline-wapper">
               <div>
-                <p>{data.year}</p>
-                <p>{data.title}</p>
+                <p className="timeline-year">{data.year}</p>
+                <p className="timeline-title">{data.title}</p>
               </div>
               <div className="flex items-center">
-                <div className=" w-10 h-10 rounded-full bg-sandleYellow/50 flex justify-center items-center">
-                  <div className="w-[26px] h-[26px] rounded-full bg-sandleYellow" />
+                <div className=" cricle-outer">
+                  <div className="cricle-inner" />
                 </div>
-                <div className=" w-[90%] border-2 border-solid border-primaryContent" />
+                <div className="timeline" />
               </div>
-              <div className="w-[232px]">
+              <div className="timeline-details">
                 {index === expandedIndex
                   ? data.detials
                   : `${data.detials.substring(0, 250)}${
                       data.detials.length > 250 ? "..." : ""
                     }`}
                 <br />
-                <button className="add-btn" onClick={() => toggleExpand(index)}>
+                <button
+                  className="add-btn btn-expand"
+                  onClick={() => toggleExpand(index)}
+                >
                   {index === expandedIndex
                     ? "Shrink"
                     : data.detials.length > 250

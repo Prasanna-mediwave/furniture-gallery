@@ -1,0 +1,32 @@
+.timeline-container {
+  @apply flex mb-10 mt-[50px] w-[87%] ml-auto overflow-auto;
+}
+.timeline-gradient {
+  @apply w-[300px] h-[526px] absolute z-10 right-0;
+  background: transparent linear-gradient(90deg, #ffffff00 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+}
+.timeline-wapper {
+  @apply w-[320px] h-[526px] relative;
+}
+.timeline-year {
+  @apply font-secondaryFont font-bold text-font_ms text-primaryContent;
+}
+.timeline-title {
+  @apply font-secondaryFont font-medium text-base text-sandleYellow mb-7;
+}
+.cricle-outer {
+  @apply w-10 h-10 rounded-full bg-sandleYellow/50 flex justify-center items-center;
+}
+.cricle-inner {
+  @apply w-[26px] h-[26px] rounded-full bg-sandleYellow;
+}
+.timeline {
+  @apply w-[90%] border-2 border-solid border-primaryContent;
+}
+.timeline-details {
+  @apply mt-10 w-[232px] font-secondaryFont text-base text-primaryContent italic;
+}
+.btn-expand {
+  @apply text-base font-secondaryFont font-medium text-primaryContent;
+}

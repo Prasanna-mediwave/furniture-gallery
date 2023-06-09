@@ -261,4 +261,17 @@ export const TimelineData = [
     detials:
       "Understanding the importance of environmental responsibility, we made a conscious decision to integrate sustainable practices into our production processes. By sourcing eco-friendly materials and implementing responsible manufacturing techniques, we ensured…",
   },
+  {
+    id: 9,
+    year: 2022,
+    title: "Sustainable Initiatives",
+    detials:
+      "Understanding the importance of environmental responsibility, we made a conscious decision to integrate sustainable practices into our production processes. By sourcing eco-friendly materials and implementing responsible manufacturing techniques, we ensured…",
+  },
+  {
+    id: 10,
+    year: 2025,
+    title: "Coming Soon ...",
+    detials: "",
+  },
 ];

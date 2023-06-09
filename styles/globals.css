@@ -53,8 +53,3 @@
 .all-product {
   @apply grid md:grid-cols-2 xl:grid-cols-3 gap-x-11 gap-y-[30px];
 }
-.new {
-  @apply w-[300px] h-[526px] absolute z-10 right-0;
-  background: transparent linear-gradient(90deg, #ffffff00 0%, #ffffff 100%) 0%
-    0% no-repeat padding-box;
-}
