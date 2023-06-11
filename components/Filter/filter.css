@@ -4,3 +4,46 @@
 .filter-header h2 {
   @apply text-font_ms font-primaryFont font-bold;
 }
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.custom-checkbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid #313131;
+}
+
+.custom-checkbox label:before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+  display: block;
+}
+
+.custom-checkbox label:before {
+  left: 14px;
+  top: 4px;
+  width: 12px;
+  height: 24px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

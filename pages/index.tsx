@@ -13,7 +13,7 @@ import { useEffect, useRef, useState } from "react";
 import { UncoveringPopup } from "@/components/popup/UncoveringPopup";
 import { Filter } from "@/components/Filter/Filter";
 import { CloseIcon } from "@/assest/icons/CloseIcon";
-import chair from "../assest/chair.jpg";
+import { SideBar } from "@/components/Sidebar/SideBar";
 
 export default function Home() {
   const [review, setReview] = useState<any>();
@@ -35,73 +35,11 @@ export default function Home() {
       <Header open={cartOpen} setOpen={setCardOPen} />
       <div ref={elementRef}>
         {cartOpen ? (
-          <div className="side-nav" style={{ height: `${scrollHeight}px` }}>
-            <div className="p-7">
-              <div className="flex justify-between">
-                <div className="font-primaryFont font-bold text-font_md">
-                  Your Cart
-                </div>
-                <div
-                  onClick={() => setCardOPen(!cartOpen)}
-                  className="cursor-pointer"
-                >
-                  <CloseIcon />
-                </div>
-              </div>
-              <p className="font-light font-secondaryFont text-font_ms">
-                2 item are available
-              </p>
-              <p className="add-btn !mb-4 !mt-2 w-fit ml-auto">Clear my cart</p>
-              <div className="cart-img">
-                <div>
-                  <Image src={chair} alt="chair" />
-                </div>
-                <div className="cart-item">
-                  <h2>Product A</h2>
-                  <p>$172</p>
-                  <div>*****</div>
-                  <div className="flex justify-between items-baseline">
-                    <div className="flex">
-                      <button>-</button>
-                      <p className="font-secondaryFont font-light text-font_sm px-3">
-                        1
-                      </p>
-                      <button>+</button>
-                    </div>
-                    <div className="add-btn !m-0">Remove</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <p className="font-secondaryFont font-semibold text-font_sm mt-11">
-                  Sub total
-                </p>
-                <div>
-                  <div className="grid grid-cols-2 font-secondaryFont font-light text-font_sm pt-3 pb-5 border-b border-dashed border-[#cccccc]">
-                    <div>Product A</div>
-                    <div className="flex justify-between items-center">
-                      <p>1 x $172</p>
-                      <p>$172</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="font-secondaryFont font-semibold text-font_sm">
-                <p>Tax</p>
-                <div className="flex justify-between font-secondaryFont font-light text-font_sm pt-3 pb-5 border-b border-dashed border-[#cccccc]">
-                  <div>VAT</div>
-                  <div>$10</div>
-                </div>
-              </div>
-              <div className="flex justify-between font-secondaryFont pt-3 pb-16">
-                <p className=" font-semibold text-font_sm ">Grand total</p>
-                <p className="font-light text-[28px]">$172</p>
-              </div>
-              <div className=" w-fit ml-auto">
-                <Button btnText="Checkout" />
-              </div>
-            </div>
-          </div>
+          <SideBar
+            scrollHeight={scrollHeight}
+            cartOpen={cartOpen}
+            setCardOPen={setCardOPen}
+          />
         ) : (
           ""
         )}

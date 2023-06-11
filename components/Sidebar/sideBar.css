@@ -1,0 +1,39 @@
+.side-nav {
+  @apply absolute w-full md:w-[70%] lg:w-[40%] right-0 z-50 bg-BgGrey transition-all delay-500 ease-in-out;
+}
+.sideBar {
+  @apply flex justify-between;
+}
+.side-bar-header {
+  @apply font-primaryFont font-bold text-font_md;
+}
+.num-list {
+  @apply font-light font-secondaryFont text-font_ms;
+}
+.font-style {
+  @apply font-secondaryFont text-font_sm;
+}
+.sub-total {
+  @apply font-semibold mt-11;
+}
+.product-wapper {
+  @apply grid grid-cols-2 font-light pt-3 pb-5 border-b border-dashed border-[#cccccc];
+}
+price-vat {
+  @apply font-light  pt-3 pb-5 border-b border-dashed border-[#cccccc];
+}
+.cart-img {
+  @apply bg-primaryBG flex items-center shadow-priceCard rounded-[10px];
+}
+.cart-img img {
+  @apply object-cover h-[149px] w-[140px] rounded-[10px];
+}
+.cart-item {
+  @apply flex-1 p-5;
+}
+.cart-item h2 {
+  @apply font-primaryFont font-bold text-font_ms;
+}
+.cart-item p {
+  @apply font-secondaryFont font-light text-font_sm;
+}

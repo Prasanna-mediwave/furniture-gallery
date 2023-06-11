@@ -12,6 +12,7 @@
 @import "../components/Timeline/timeline.css";
 @import "../components/popup/uncovering.css";
 @import "../components/Filter/filter.css";
+@import "../components/Sidebar/sideBar.css";
 
 @layer base {
   body {
@@ -57,22 +58,4 @@
 }
 .all-product {
   @apply grid md:grid-cols-2 xl:grid-cols-3 gap-x-11 gap-y-[30px];
-}
-.side-nav {
-  @apply absolute w-full md:w-[70%] lg:w-[40%] right-0 z-50 bg-BgGrey transition-all delay-500 ease-in-out;
-}
-.cart-img {
-  @apply bg-primaryBG flex items-center shadow-priceCard rounded-[10px];
-}
-.cart-img img {
-  @apply object-cover h-[149px] w-[140px] rounded-[10px];
-}
-.cart-item {
-  @apply flex-1 p-5;
-}
-.cart-item h2 {
-  @apply font-primaryFont font-bold text-font_ms;
-}
-.cart-item p {
-  @apply font-secondaryFont font-light text-font_sm;
 }
