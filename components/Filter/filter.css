@@ -1,0 +1,6 @@
+.filter-header {
+  @apply flex justify-between items-center pt-10 pb-4 px-6 border-b-2 border-solid border-pages;
+}
+.filter-header h2 {
+  @apply text-font_ms font-primaryFont font-bold;
+}

@@ -2,7 +2,7 @@
   @apply fixed flex justify-center items-center z-50 top-0 left-0 w-full h-full bg-primaryBG/90;
 }
 .gallery-popup {
-  @apply w-[600px] bg-primaryBG rounded-[10px] shadow-default py-10 pr-7 pl-12;
+  @apply w-[600px] bg-primaryBG rounded-[10px] shadow-default py-10 pr-7 pl-12 border border-solid border-pages;
 }
 .gallery-popup button {
   @apply text-4xl rotate-45;
@@ -14,11 +14,11 @@
   @apply object-cover w-[517px] h-[219px] rounded-[10px];
 }
 .popup-details {
-  @apply text-primaryContent font-primaryFont font-light text-xl pr-12 mt-7 mb-5;
+  @apply font-primaryFont font-light text-xl pr-12 mt-7 mb-5;
 }
 .detail-wapper h2 {
-  @apply text-font_ms text-primaryContent font-primaryFont font-bold;
+  @apply text-font_ms  font-primaryFont font-bold;
 }
 .detail-wapper p {
-  @apply text-lg text-primaryContent font-secondaryFont font-light;
+  @apply text-lg  font-secondaryFont font-light;
 }

@@ -8,16 +8,16 @@
   @apply max-w-[466px];
 }
 .lg-size h2 {
-  @apply text-font_xl font-bold leading-[60px] mb-4;
+  @apply text-font_ms md:text-font_md lg:text-font_lg xl:text-font_xl font-bold md:leading-8 lg:leading-10 xl:leading-[60px] mb-4;
 }
 .lg-size p {
-  @apply text-2xl font-light;
+  @apply text-lg md:text-xl lg:text-2xl font-light;
 }
 .md-size h2,
 .center-content h2 {
-  @apply text-font_lg font-bold mb-4;
+  @apply max-[767px]:text-center text-font_ms md:text-font_md lg:text-font_lg font-bold mb-4;
 }
 .md-size p,
 .center-content p {
-  @apply text-xl font-light;
+  @apply max-[767px]:text-center text-base md:text-lg lg:text-xl font-light;
 }

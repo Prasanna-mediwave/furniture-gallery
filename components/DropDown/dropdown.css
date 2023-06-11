@@ -3,7 +3,7 @@
 }
 
 .dropdown-list {
-  @apply text-primaryContent text-base font-medium font-primaryFont;
+  @apply text-base font-medium font-primaryFont;
 }
 
 .dropdown-container,
@@ -12,5 +12,5 @@
 }
 
 .menu-btn {
-  @apply py-[14px] px-4 flex justify-center items-center rounded-3xl bg-grey text-primaryContent text-base font-medium font-primaryFont cursor-pointer mb-3;
+  @apply py-[14px] px-4 flex justify-center items-center rounded-3xl bg-grey text-base font-medium font-primaryFont cursor-pointer mb-3;
 }

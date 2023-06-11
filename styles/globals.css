@@ -11,30 +11,31 @@
 @import "../components/DropDown/dropdown.css";
 @import "../components/Timeline/timeline.css";
 @import "../components/popup/uncovering.css";
+@import "../components/Filter/filter.css";
 
 @layer base {
   body {
-    @apply bg-primaryBG;
+    @apply bg-primaryBG text-primaryContent;
   }
 }
 
 .top-container {
-  @apply sm:ml-20 grid grid-cols-2 gap-x-32 items-center mb-[104px];
+  @apply sm:ml-20 grid md:grid-cols-2 gap-x-32 items-center mb-12 md:mb-[104px];
 }
 .card-container {
-  @apply w-3/4 m-auto;
+  @apply w-11/12 lg:w-3/4 m-auto;
 }
 .card-length {
   @apply grid md:grid-cols-2 xl:grid-cols-3 gap-11;
 }
 .gallery-container {
-  @apply mt-40 mb-[88px] grid grid-cols-2 gap-x-[97px] w-fit ml-auto min-[1367px]:w-[89%];
+  @apply mt-6 md:mt-40 mb-8 md:mb-[88px] grid md:grid-cols-2 gap-x-5 md:gap-x-10 xl:gap-x-[97px] md:w-fit ml-auto xl:w-[89%];
 }
 .gallery-text {
-  @apply w-fit ml-auto min-[1367px]:w-[89%];
+  @apply w-fit max-[767px]:mb-8 max-[767px]:m-auto md:ml-auto min-[1367px]:w-[89%];
 }
 .gallery-image {
-  @apply grid grid-cols-3 gap-x-8 gap-y-7 pr-20;
+  @apply grid max-[516px]:grid-cols-2 grid-cols-3 m-auto gap-3 md:gap-x-4 lg:gap-x-8 md:gap-y-4 lg:gap-y-7 md:pr-3 lg:pr-20;
 }
 .gallery-image img {
   @apply object-cover h-[162px] w-[162px];
@@ -46,14 +47,32 @@
   @apply max-w-[510px] bg-grey flex rounded-3xl mt-20;
 }
 .search-item input {
-  @apply bg-transparent outline-none text-primaryContent placeholder:text-primaryContent py-[14px] pl-6 w-[73%] font-primaryFont font-medium;
+  @apply bg-transparent outline-none py-[14px] pl-6 w-[73%] font-primaryFont font-medium;
 }
 .sort-by {
-  @apply absolute right-0 top-0;
+  @apply absolute right-0 md:top-0 max-[768px]:mt-3;
 }
 .add-btn {
-  @apply border-b-2 border-sandleYellow border-solid mt-3 mb-14;
+  @apply border-b-2 border-sandleYellow border-solid mt-3 mb-14 cursor-pointer;
 }
 .all-product {
   @apply grid md:grid-cols-2 xl:grid-cols-3 gap-x-11 gap-y-[30px];
+}
+.side-nav {
+  @apply absolute w-full md:w-[70%] lg:w-[40%] right-0 z-50 bg-BgGrey transition-all delay-500 ease-in-out;
+}
+.cart-img {
+  @apply bg-primaryBG flex items-center shadow-priceCard rounded-[10px];
+}
+.cart-img img {
+  @apply object-cover h-[149px] w-[140px] rounded-[10px];
+}
+.cart-item {
+  @apply flex-1 p-5;
+}
+.cart-item h2 {
+  @apply font-primaryFont font-bold text-font_ms;
+}
+.cart-item p {
+  @apply font-secondaryFont font-light text-font_sm;
 }

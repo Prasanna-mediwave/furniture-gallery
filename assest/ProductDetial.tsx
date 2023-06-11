@@ -32,6 +32,7 @@ export const BestProduct = [
 export const AllProduct = [
   {
     id: 1,
+    type: "Product A",
     title: "Product A",
     img: chair,
     alt: "chair",
@@ -41,6 +42,7 @@ export const AllProduct = [
   },
   {
     id: 2,
+    type: "Product B",
     title: "Product B",
     img: chair,
     alt: "chair",
@@ -50,6 +52,7 @@ export const AllProduct = [
   },
   {
     id: 3,
+    type: "Product C",
     title: "Product C",
     img: chair,
     alt: "chair",
@@ -59,7 +62,8 @@ export const AllProduct = [
   },
   {
     id: 4,
-    title: "Product A",
+    type: "Product D",
+    title: "Product D",
     img: chair,
     alt: "chair",
     price: 209,
@@ -68,7 +72,8 @@ export const AllProduct = [
   },
   {
     id: 5,
-    title: "Product B",
+    type: "Product E",
+    title: "Product E",
     img: chair,
     alt: "chair",
     price: 310,
@@ -77,7 +82,8 @@ export const AllProduct = [
   },
   {
     id: 6,
-    title: "Product C",
+    type: "Product F",
+    title: "Product F",
     img: chair,
     alt: "chair",
     price: 209,
@@ -86,7 +92,8 @@ export const AllProduct = [
   },
   {
     id: 7,
-    title: "Product A",
+    type: "Product G",
+    title: "Product G",
     img: chair,
     alt: "chair",
     price: 209,
@@ -95,7 +102,8 @@ export const AllProduct = [
   },
   {
     id: 8,
-    title: "Product B",
+    type: "Product H",
+    title: "Product H",
     img: chair,
     alt: "chair",
     price: 310,
@@ -104,7 +112,8 @@ export const AllProduct = [
   },
   {
     id: 9,
-    title: "Product C",
+    type: "Product I",
+    title: "Product I",
     img: chair,
     alt: "chair",
     price: 209,
